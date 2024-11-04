@@ -6,7 +6,7 @@ const MemberCarousel = ({ member, onClose, onNext, onPrev }) => {
     return (
         <div className="bg-gray-100 flex flex-row relative ">
             <img src={member.carouselImg} alt={member.name} className=" h-auto w-1/2 mr-auto" />
-            <div className='flex flex-col items-center justify-start w-1/2 py-8 px-20 sm:py-20 gap-5 '>
+            <div className='flex flex-col items-center justify-start w-1/2 py-8 px-20 gap-5 '>
                 <div onClick={onClose} className='p-2 rounded-full bg-fuchsia-800 leading-none hover:cursor-pointer absolute top-8 right-8'>
                     <box-icon color='white' size='lg' name='x'></box-icon>
                 </div>

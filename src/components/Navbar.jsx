@@ -29,7 +29,7 @@ const Navbar = () => {
         <li onClick={() => scrollToSection('media')} className="hover:cursor-pointer">Media</li>
         <li className="hover:cursor-pointer">Events</li>
         <li className="hover:cursor-pointer">Press</li>
-        <li className="hover:cursor-pointer">Contact</li>
+        <li onClick={() => scrollToSection('contact')} className="hover:cursor-pointer">Contact</li>
         <li className="hover:cursor-pointer text-xl font-semibold text-fuchsia-700 bg-white py-2.5 px-2 rounded-full leading-none">DE</li>
       </ul>
     </nav>
