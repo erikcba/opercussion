@@ -6,7 +6,6 @@ import PastEvents from '../sections/PastEvents'
 const Events = () => {
     return (
         <>
-            <Navbar />
             <UpComing/>
             <PastEvents/>
             <Footer/>

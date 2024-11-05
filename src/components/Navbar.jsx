@@ -26,7 +26,7 @@ const Navbar = () => {
         <Link to="/events">
           <li onClick={() => scrollToTop()} className="hover:cursor-pointer">Events</li>
         </Link>
-        <Link>
+        <Link to={'/press'} state={{ sectionId: 'press' }}>
           <li className="hover:cursor-pointer">Press</li>
         </Link>
         <Link to={'/'} state={{ sectionId: 'contact' }}>
