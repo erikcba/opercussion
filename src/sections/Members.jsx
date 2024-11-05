@@ -28,9 +28,23 @@ const Members = () => {
     { id: 5, img: member5Img, name: 'Carlos Vera Larrucea', description: 'Carlos grew up in Santiago de Chile. He was first deputy solo timpanist at Teatro Municipal de Santiago (national opera in Chile) before joining the Bavarian State Opera in 2015. Carlos loves the vibraphone, plays a little guitar and learned to play the recorder as a child.', carouselImg: carouselImg5 }
   ]
 
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    const offset = 110;
+    const sectionPosition = section.offsetTop - offset;
+
+    window.scrollTo({
+      top: sectionPosition,
+      behavior: 'smooth'
+    });
+  }
+
   const handleMemberClick = (member, index) => {
     setSelectedMember(member);
     setSelectedIndex(index);
+    setTimeout(() => {
+      scrollToSection('memberCarousel')
+    }, 100);
   };
 
   const closeCarousel = () => {

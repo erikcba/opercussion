@@ -4,7 +4,7 @@ const MemberCarousel = ({ member, onClose, onNext, onPrev }) => {
     const [prevIconColor, setPrevIconColor] = useState("rgb(134 25 143)");
     const [nextIconColor, setNextIconColor] = useState("rgb(134 25 143)");
     return (
-        <div className="bg-gray-100 flex flex-row relative ">
+        <div id='memberCarousel' className="bg-gray-100 flex flex-row relative ">
             <img src={member.carouselImg} alt={member.name} className=" h-auto w-1/2 mr-auto" />
             <div className='flex flex-col items-center justify-start w-1/2 py-8 px-20 gap-5 '>
                 <div onClick={onClose} className='p-2 rounded-full bg-fuchsia-800 leading-none hover:cursor-pointer absolute top-8 right-8'>
