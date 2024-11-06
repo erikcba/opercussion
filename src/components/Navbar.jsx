@@ -8,15 +8,15 @@ const Navbar = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
-    });
-  };
+    })
+  }
 
   return (
-    <nav className="h-24 bg-fuchsia-800 flex flex-row justify-around items-center fixed top-0 left-0 right-0 z-50">
+    <nav className="h-24 bg-fuchsia-800 flex flex-row justify-around w-full items-center fixed top-0 left-0 right-0 z-50">
       <Link to={'/'}>
-        <img onClick={() => scrollToTop()} src={logo} alt="" className='hover:cursor-pointer' />
+        <img onClick={() => scrollToTop()} src={logo} alt="" className='hover:cursor-pointer sm:w-full w-40' />
       </Link>
-      <ul className="flex flex-row text-white font-normal text-2xl gap-14 items-center">
+      <ul className="hidden sm:flex flex-row text-white font-normal text-2xl gap-14 items-center">
         <Link to={'/'} state={{ sectionId: 'about' }}>
           <li className="hover:cursor-pointer">About us</li>
         </Link>

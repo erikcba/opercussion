@@ -7,7 +7,7 @@ const MemberImg = ({ image, name }) => {
                 <div className='relative rounded-full'>
                     <img src={image} alt="" className='hover:cursor-pointer p-2.5 rounded-full' />
                 </div>
-                <p className='text-lg font-semibold text-fuchsia-800 uppercase '>{name}</p>
+                <p className='sm:text-lg text-xs font-semibold text-fuchsia-800 uppercase '>{name}</p>
             </div>
         </>
     )

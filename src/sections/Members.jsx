@@ -65,10 +65,10 @@ const Members = () => {
   return (
     <div className='self-center flex flex-col gap-5 py-10 w-full'>
       <h1 className='text-4xl font-semibold text-center text-fuchsia-800'>Members</h1>
-      <div className='flex flex-row justify-between '>
+      <div className='flex flex-row sm:justify-between justify-center sm:gap-0 gap-1 items-center sm:flex-nowrap flex-wrap'>
         {members.length > 0 ? (
           members.map((member, index) => (
-            <div key={member.id} onClick={() => handleMemberClick(member, index)}>
+            <div key={member.id} onClick={() => handleMemberClick(member, index)} className='sm:w-auto w-1/3'>
               <MemberImg image={member.img} name={member.name} />
             </div>
           ))

@@ -17,3 +17,28 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 }
+
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;  /* Hace que los indicadores sean circulares */
+  background-color: #6d6c6c; /* Cambia el color según prefieras */
+  opacity: 0.5; /* Para un efecto suave */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Transiciones para un efecto más elegante */
+  margin: 5px; /* Espacio entre indicadores */
+}
+
+.carousel-indicators .active {
+  opacity: 1; /* Indicador activo más visible */
+  transform: scale(1.2); /* Agranda el círculo del indicador activo */
+  background-color: #fff; /* Color de fondo diferente para el activo */
+}
+
+#memberCarousel {
+  opacity: 1;
+  transition: opacity .5s ease-in-out;
+
+  @starting-style {
+      opacity: 0;
+  }
+}

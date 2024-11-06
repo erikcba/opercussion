@@ -7,7 +7,7 @@ import slider3 from '../assets/slider3-hero.png'
 const Hero = () => {
     let imagenes = [slider1, slider2, slider3]
     return (
-        <div className="h-screen mt-24">
+        <div className="sm:h-screen sm:mb-0 mb-10 mt-24">
             <Carrusel imagenes={imagenes} idCarrusel='carruselHero' />
         </div>
     )

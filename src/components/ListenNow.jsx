@@ -5,14 +5,14 @@ const ListenNow = () => {
 
 
   return (
-    <div className='flex flex-col bg-gradient-to-b  to-indigo-500 from-indigo-300 p-3 rounded-lg h-full justify-between'>
-      <div className='bg-rose-400 h-1/2 rounded-lg p-3'>
-        <p className='text-gray-300 font-semibold text-xl'>OPERCUSSION ORIGINAL GROOVES</p>
+    <div className='flex sm:flex-col sm:h-full h-52 bg-gradient-to-b sm:gap-0 gap-3 to-indigo-500 from-indigo-300 p-3 rounded-lg sm:justify-around justify-between'>
+      <div className='bg-rose-400 sm:h-1/2 h-full rounded-lg p-3'>
+        <p className='text-gray-300 font-semibold sm:text-xl text-sm'>OPERCUSSION ORIGINAL GROOVES</p>
       </div>
-      <div>
-        <p className='text-white text-3xl font-semibold'>Listen to us on your favourite platform</p>
+      <div className='flex flex-col justify-around sm:gap-3'>
+        <p className='text-white sm:text-3xl text-xl font-semibold'>Listen to us on your favourite platform</p>
+        <button className='bg-white text-indigo-400 rounded-full uppercase py-2 font-semibold sm:text-xl text-md'>Listen now</button>
       </div>
-      <button className='bg-white text-indigo-400 rounded-full uppercase py-2 font-semibold text-xl'>Listen now</button>
     </div>
   )
 }

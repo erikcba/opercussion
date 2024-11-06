@@ -9,7 +9,7 @@ import facebookicon from '../assets/facebookicon.png'
 const Footer = () => {
     return (
         <section id='contact' className='bg-footer h-full'>
-            <div className='container sm:px-32 sm:py-20 flex sm:flex-row items-center justify-between h-full'>
+            <div className='container sm:px-32 px-10 sm:py-20 py-10 flex sm:flex-row flex-col items-center justify-between h-full gap-5'>
                 <div className='flex flex-col items-start gap-5 h-full'>
                     <h2 className='font-semibold text-4xl text-white'>Contact</h2>
                     <div className='flex flex-col gap-3'>
