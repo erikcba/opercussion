@@ -5,10 +5,10 @@ const MemberCarousel = ({ member, onClose, onNext, onPrev }) => {
     const [nextIconColor, setNextIconColor] = useState("rgb(134 25 143)");
     return (
         <div id='memberCarousel' className="bg-gray-100 flex sm:flex-row flex-col relative ">
-            <div className='sm:h-auto h-80 overflow-hidden'>
-                <img src={member.carouselImg} alt={member.name} className="sm:h-auto sm:w-1/2 w-full sm:mr-auto" />
+            <div className='sm:h-full h-80 overflow-hidden'>
+                <img src={member.carouselImg} alt={member.name} className=" w-full sm:mr-auto" />
             </div>
-            <div className='flex flex-col items-center justify-start sm:w-1/2 w-full sm:py-8 sm:px-20 px-10 sm:gap-5 gap-4 '>
+            <div className='flex flex-col items-center justify-start sm:w-1/2 w-full sm:py-8 sm:px-16 px-10 gap-10'>
                 <div onClick={onClose} className='sm:p-2 p-1 rounded-full bg-fuchsia-800 leading-none hover:cursor-pointer absolute sm:top-8 sm:right-8 top-5 right-5'>
                     <box-icon color='white' size='lg' name='x'></box-icon>
                 </div>

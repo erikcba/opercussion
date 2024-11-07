@@ -8,7 +8,7 @@ const PressSection = () => {
   return (
     <section className='container sm:px-32 my-24 '>
         <h1 className='text-fuchsia-800 font-semibold text-4xl py-5'>Upcoming Events</h1>
-        <div className='grid grid-cols-2 gap-4'>
+        <div className='grid sm:grid-cols-2 grid-cols-1 gap-4'>
             <Notices title={'“Let go, revive, shine”'} description={'Süddeutsche zeitung'} img={noticeimg1} />
             <Notices title={'“Opercussion plays Latin jazz in the Munich State Opera”'} description={'musikmachen.de'} img={noticeimg2}/>
         </div>

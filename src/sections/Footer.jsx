@@ -3,6 +3,9 @@ import opercussionLogo from '../assets/opercussion_logo.png'
 import youtubeicon from '../assets/youtubeicon.png'
 import instagramicon from '../assets/instagramicon.png'
 import facebookicon from '../assets/facebookicon.png'
+import mailIcon from '../assets/mailIcon.png'
+import phoneIcon from '../assets/phoneIcon.png'
+import webIcon from '../assets/webIcon.png'
 
 
 
@@ -20,9 +23,18 @@ const Footer = () => {
                         </div>
                     </div>
                     <div>
-                        <p className='text-white text-xl font-light leading-8'>contact@tybarts.com</p>
-                        <p className='text-white text-xl font-light leading-8'>+44 20 3535 5611</p>
-                        <p className='text-white text-xl font-light leading-8'>www.tybarts.com</p>
+                        <div className='flex flex-row gap-3 justify-start items-center'>
+                            <img src={mailIcon} alt="" />
+                            <p className='text-white text-xl font-light leading-8'>contact@tybarts.com</p>
+                        </div>
+                        <div className='flex flex-row gap-3 justify-start items-center'>
+                            <img src={phoneIcon} alt="" />
+                            <p className='text-white text-xl font-light leading-8'>+44 20 3535 5611</p>
+                        </div>
+                        <div className='flex flex-row gap-3 justify-start items-center'>
+                            <img src={webIcon} alt="" />
+                            <p className='text-white text-xl font-light leading-8'>www.tybarts.com</p>
+                        </div>
                     </div>
                 </div>
                 <div className='flex flex-col gap-4'>
@@ -33,6 +45,9 @@ const Footer = () => {
                         <img src={facebookicon} alt="" />
                     </div>
                 </div>
+            </div>
+            <div className='h-full bg-fuchsia-800'>
+                <p className='text-center text-gray-300 py-2 uppercase text-sm'>Copyright © OPERcussion GbR</p>
             </div>
         </section>
     )

@@ -15,15 +15,15 @@ const Media = () => {
     const imagenes = [slider1, slider2, slider3, slider4, slider5]
 
     return (
-        <section id='media' className='bg-indigo-100 py-10 sm:py-32 h-full'>
-            <div className='container sm:px-32 grid sm:grid-cols-5 grid-cols-1 justify-center gap-4' >
-                <div className='sm:col-span-4 col-span-1'>
+        <section id='media' className='bg-indigo-100 py-20 sm:py-32 h-full'>
+            <div className='container sm:px-32 grid lg:grid-cols-5 grid-cols-1 justify-center gap-4' >
+                <div className='lg:col-span-4 col-span-1'>
                     <Video />
                 </div>
                 <div className='col-span-1 h-full'>
                     <ListenNow />
                 </div>
-                <div className='sm:col-span-5 col-span-1'>
+                <div className='lg:col-span-5 col-span-1'>
                     <Carrusel imagenes={imagenes} idCarrusel='carruselMedia' indicadores={'true'}/>
                 </div>
             </div>

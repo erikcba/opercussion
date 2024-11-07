@@ -5,7 +5,7 @@ import Members from './Members'
 
 const About = () => {
   return (
-    <section id="about" className='sm:container container flex flex-column sm:gap-5 gap-2 sm:px-32 '>
+    <section id="about" className='sm:container container flex flex-column sm:gap-5 gap-2 xl:px-32 '>
       <div className='flex flex-row'>
         <img src={esquinaIzq} alt="esquinaIzq" className=' sm:block hidden h-1/2' />
         <div className='flex flex-col py-10'>
