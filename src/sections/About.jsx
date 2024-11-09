@@ -10,7 +10,7 @@ const About = () => {
     <section id="about" className='sm:container container flex flex-column sm:gap-5 gap-2 xl:px-32 '>
       <div className='flex flex-row'>
         <img src={esquinaIzq} alt="esquinaIzq" className=' sm:block hidden h-1/2' />
-        <div className='flex flex-col py-10'>
+        <div className='flex flex-col pt-0 pb-10 sm:py-10'>
           <div className='text-fuchsia-800 flex flex-row justify-center items-center sm:gap-5 gap-3 mb-5'>
             <h1 className='sm:text-6xl text-4xl font-light border-r-4 border-fuchsia-800 text-center sm:pr-5 pr-2'>Pulse</h1>
             <h1 className='sm:text-6xl text-4xl font-light border-r-4 border-fuchsia-800 text-center sm:pr-5 pr-2'>Vibe</h1>

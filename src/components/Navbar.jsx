@@ -44,7 +44,7 @@ const Navbar = () => {
         <li className="hover:cursor-pointer text-xl font-semibold text-fuchsia-700 bg-white py-2.5 px-2 rounded-full leading-none">DE</li>
       </ul>
       {menuOpen && (
-        <div className="fixed top-24 left-0 right-0 bg-fuchsia-800 text-white text-2xl p-4 lg:hidden">
+        <div className="fixed top-24 left-0 right-0 bg-fuchsia-800 text-white text-2xl px-4 pt-4 pb-8 lg:hidden">
           <ul className="flex flex-col gap-4">
             <Link to={'/'} state={{ sectionId: 'about' }} onClick={toggleMenu}>
               <li className="hover:cursor-pointer">About us</li>
