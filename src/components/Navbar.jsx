@@ -20,7 +20,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="h-24 bg-fuchsia-800 flex flex-row sm:justify-around justify-between sm:px-0 px-4 w-full items-center fixed top-0 left-0 right-0 z-50">
+    <nav className="h-24 bg-fuchsia-800 flex flex-row sm:justify-around justify-between sm:px-0 px-4 w-full items-center fixed top-0 left-0 right-0 z-50 ">
       <Link to={'/'}>
         <img onClick={() => scrollToTop()} src={logo} alt="" className='hover:cursor-pointer sm:w-full w-40 self-baseline' />
       </Link>

@@ -68,7 +68,7 @@ const Members = () => {
       <div className='flex flex-row 2xl:justify-between justify-center sm:gap-0 gap-3 items-center sm:flex-nowrap flex-wrap'>
         {members.length > 0 ? (
           members.map((member, index) => (
-            <div key={member.id} onClick={() => handleMemberClick(member, index)} className='sm:w-auto w-1/3'>
+            <div key={member.id} onClick={() => handleMemberClick(member, index)} className='sm:w-auto w-5/12'>
               <MemberImg image={member.img} name={member.name} />
             </div>
           ))

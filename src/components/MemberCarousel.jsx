@@ -4,11 +4,11 @@ const MemberCarousel = ({ member, onClose, onNext, onPrev }) => {
     const [prevIconColor, setPrevIconColor] = useState("rgb(134 25 143)");
     const [nextIconColor, setNextIconColor] = useState("rgb(134 25 143)");
     return (
-        <div id='memberCarousel' className="bg-gray-100 flex sm:flex-row flex-col relative ">
-            <div className='sm:h-full h-80 overflow-hidden'>
+        <div id='memberCarousel' className="bg-gray-100 flex lg:flex-row flex-col relative ">
+            <div className='lg:h-full h-80 overflow-hidden'>
                 <img src={member.carouselImg} alt={member.name} className=" w-full sm:mr-auto" />
             </div>
-            <div className='flex flex-col items-center justify-start sm:w-1/2 w-full sm:py-8 sm:px-16 px-10 gap-10'>
+            <div className='flex flex-col items-center justify-start lg:w-1/2 w-full 2xl:py-8 xl:px-12 px-10 gap-10'>
                 <div onClick={onClose} className='sm:p-2 p-1 rounded-full bg-fuchsia-800 leading-none hover:cursor-pointer absolute sm:top-8 sm:right-8 top-5 right-5'>
                     <box-icon color='white' size='lg' name='x'></box-icon>
                 </div>
@@ -21,7 +21,7 @@ const MemberCarousel = ({ member, onClose, onNext, onPrev }) => {
                     </button>
                 </div>
                 <h2 className="sm:text-5xl text-3xl uppercase text-fuchsia-800 font-semibold text-left w-full">{member.name}</h2>
-                <p className="text-black sm:text-2xl text-lg font-medium text-start sm:leading-9 leading-7 sm:pb-0 pb-4">{member.description}</p>
+                <p className="text-black xl:text-2xl md:text-xl text-lg font-medium text-start 2xl:leading-9 leading-7 sm:pb-0 pb-4">{member.description}</p>
             </div>
         </div>
     )

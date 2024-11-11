@@ -21,11 +21,11 @@ background-size: cover;
 .carousel-indicators [data-bs-target] {
   width: 12px;
   height: 12px;
-  border-radius: 100%;  /* Hace que los indicadores sean circulares */
-  background-color: #6d6c6c; /* Cambia el color según prefieras */
-  opacity: 0.5; /* Para un efecto suave */
-  transition: opacity 0.3s ease, transform 0.3s ease; /* Transiciones para un efecto más elegante */
-  margin: 5px; /* Espacio entre indicadores */
+  border-radius: 100%;  
+  background-color: #6d6c6c; 
+  opacity: 0.5; 
+  transition: opacity 0.3s ease, transform 0.3s ease; 
+  margin: 5px; 
 }
 
 .carousel-indicators .active {
@@ -40,5 +40,55 @@ background-size: cover;
 
   @starting-style {
       opacity: 0;
+  }
+}
+
+.memberlineas {
+  position: relative;
+  border-radius: 50%;
+}
+
+.memberlineas::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-image: url('assets/bordeImg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  transition: transform 0.5s ease; /* Transición suave */
+  z-index: 1;
+}
+
+
+.memberimg:hover .memberlineas::before {
+  transform: rotate(90deg); /* Rotación de la imagen de fondo al hacer hover */
+}
+
+.bg-white-c.rounded-full {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bg-white-c.rounded-full .play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .memberlineas::before {
+    background-size: contain;
+  }
+  .carousel-indicators [data-bs-target]{
+    width: 8px;
+    height: 8px;
+    margin-bottom: 0;
   }
 }
