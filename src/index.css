@@ -92,3 +92,27 @@ background-size: cover;
     margin-bottom: 0;
   }
 }
+
+.forma{
+  position:fixed;
+  bottom:2em;
+  right: 50%;
+  width:5em;
+  height:5em;
+  border-radius: 10px 0 0 150px;
+  background-color:white;
+  border:2px solid white;
+  z-index: 100;
+}
+.forma2{
+  position:fixed;
+  bottom:2em;
+  left: 50%;
+  width:5em;
+  height:5em;
+  border-radius: 0 0 15px 150px;
+  background-color:white;
+  border:2px solid white;
+  rotate: -90deg;
+  z-index: 100;
+}
