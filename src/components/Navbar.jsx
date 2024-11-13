@@ -2,10 +2,13 @@ import logo from '../assets/logo.png'
 import { Link } from 'react-router-dom'
 import menuImg from '../assets/menu.png'
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 const Navbar = () => {
 
   const [menuOpen, setMenuOpen] = useState(false)
+  const { i18n } = useTranslation()
+  const currentLanguage = i18n.language
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen)
@@ -17,6 +20,10 @@ const Navbar = () => {
       behavior: 'smooth'
     })
     setMenuOpen(false)
+  }
+
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
   }
 
   return (
@@ -41,7 +48,21 @@ const Navbar = () => {
         <Link to={'/'} state={{ sectionId: 'contact' }}>
           <li className="hover:cursor-pointer">Contact</li>
         </Link>
-        <li className="hover:cursor-pointer text-xl font-semibold text-fuchsia-700 bg-white py-2.5 px-2 rounded-full leading-none">DE</li>
+        {currentLanguage === 'en' ? (
+          <li
+            onClick={() => changeLanguage('de')}
+            className="hover:cursor-pointer text-xl font-semibold text-fuchsia-700 bg-white py-2.5 px-2 rounded-full leading-none"
+          >
+            DE
+          </li>
+        ) : (
+          <li
+            onClick={() => changeLanguage('en')}
+            className="hover:cursor-pointer text-xl font-semibold text-fuchsia-700 bg-white py-2.5 px-2 rounded-full leading-none"
+          >
+            EN
+          </li>
+        )}
       </ul>
       {menuOpen && (
         <div className="fixed top-24 left-0 right-0 bg-fuchsia-800 text-white text-2xl px-4 pt-4 pb-8 lg:hidden">
@@ -61,7 +82,21 @@ const Navbar = () => {
             <Link to={'/'} state={{ sectionId: 'contact' }} onClick={toggleMenu}>
               <li className="hover:cursor-pointer">Contact</li>
             </Link>
-            <li className="hover:cursor-pointer text-xl font-semibold text-fuchsia-700 bg-white py-2.5 px-2 rounded-full leading-none w-fit">DE</li>
+            {currentLanguage === 'en' ? (
+              <li
+                onClick={() => changeLanguage('de')}
+                className="hover:cursor-pointer w-fit text-xl font-semibold text-fuchsia-700 bg-white py-2.5 px-2 rounded-full leading-none"
+              >
+                DE
+              </li>
+            ) : (
+              <li
+                onClick={() => changeLanguage('en')}
+                className="hover:cursor-pointer w-fit text-xl font-semibold text-fuchsia-700 bg-white py-2.5 px-2 rounded-full leading-none"
+              >
+                EN
+              </li>
+            )}
           </ul>
         </div>
       )}
