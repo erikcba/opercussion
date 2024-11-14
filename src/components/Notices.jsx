@@ -1,6 +1,8 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const Notices = ({img, title, description, onclick}) => {
+  const { t } = useTranslation()
   return (
     <div className='flex flex-row items-center justify-start gap-4 rounded-2xl shadow-lg h-full w-full'>
       <div className='w-1/3 h-full'>
@@ -11,7 +13,7 @@ const Notices = ({img, title, description, onclick}) => {
             <h1 className='text-fuchsia-800 font-semibold sm:text-2xl text-xl'>{title} </h1>
             <p className='text-fuchsia-800 text-base font-light uppercase'>{description} </p>
         </div>
-        <button onClick={onclick} className='bg-fuchsia-800 text-white uppercase rounded-full py-2 px-5 font-medium text-lg'>Read More</button>
+        <button onClick={onclick} className='bg-fuchsia-800 text-white uppercase rounded-full py-2 px-5 font-medium text-lg'>{t('readMoreBtn')} </button>
       </div>
     </div>
   )

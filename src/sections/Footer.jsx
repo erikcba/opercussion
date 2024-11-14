@@ -6,15 +6,16 @@ import facebookicon from '../assets/facebookicon.png'
 import mailIcon from '../assets/mailIcon.png'
 import phoneIcon from '../assets/phoneIcon.png'
 import webIcon from '../assets/webIcon.png'
-
+import { useTranslation } from 'react-i18next'
 
 
 const Footer = () => {
+    const { t } = useTranslation()
     return (
         <section id='contact' className='bg-footer h-full'>
             <div className='container sm:px-32 px-10 sm:py-20 py-10 flex sm:flex-row flex-col items-center justify-between h-full gap-5'>
                 <div className='flex flex-col items-start gap-5 h-full'>
-                    <h2 className='font-semibold text-4xl text-white'>Contact</h2>
+                    <h2 className='font-semibold text-4xl text-white'>{t("contactNav")}</h2>
                     <div className='flex flex-col gap-3'>
                         <img src={tybLogo} className='w-max' alt="" />
                         <div>
@@ -40,13 +41,20 @@ const Footer = () => {
                 <div className='flex flex-col gap-4'>
                     <img src={opercussionLogo} alt="" />
                     <div className='flex flex-row items-center justify-around'>
-                        <img src={youtubeicon} alt="" />
-                        <img src={instagramicon} alt="" />
-                        <img src={facebookicon} alt="" />
+                        <a href="https://www.youtube.com/@opercussion" target="_blank" rel="noreferrer">
+                            <img src={youtubeicon} alt="" />
+                        </a>
+                        <a href="https://www.instagram.com/opercussionmunich/" target="_blank" rel="noreferrer">
+
+                            <img src={instagramicon} alt="" />
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100064127739045&locale=es_LA" target="_blank" rel="noreferrer">
+                            <img src={facebookicon} alt="" />
+                        </a>
                     </div>
                 </div>
             </div>
-            <div className='h-full bg-fuchsia-800'>
+            <div className='h-full bg-fuchsia-800 sm:pb-0 pb-16'>
                 <p className='text-center text-gray-300 py-2 uppercase text-sm'>Copyright © OPERcussion GbR</p>
             </div>
         </section>

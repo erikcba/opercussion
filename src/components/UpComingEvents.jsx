@@ -1,6 +1,8 @@
-import React from 'react'
+import { useTranslation } from 'react-i18next'
+
 
 const UpComingEvents = ({place, city, date, img, ticket}) => {
+    const { t } = useTranslation()
     return (
         <>
             <div className='grid grid-cols-6'>
@@ -10,7 +12,7 @@ const UpComingEvents = ({place, city, date, img, ticket}) => {
                         <p className='text-fuchsia-800 font-semibold text-4xl'>{place}</p>
                         <p className='text-fuchsia-800 uppercase font-light text-xl'>{city}</p>
                     </div>
-                    <button className='bg-fuchsia-800 uppercase text-white rounded-full py-2 px-5 w-fit font-medium text-xl'>Get ticket here</button>
+                    <button className='bg-fuchsia-800 uppercase text-white rounded-full py-2 px-5 w-fit font-medium text-xl'>{t('getTicket')}</button>
                 </div>
                 <div className='sm:col-span-4 col-span-6 sm:py-0 py-4'>
                     <img src={img} alt="" />

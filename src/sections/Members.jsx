@@ -12,10 +12,7 @@ import carouselImg4 from '../assets/carouselImg4.png'
 import carouselImg5 from '../assets/carouselImg5.png'
 import { useTranslation } from 'react-i18next'
 
-
-
 import MemberCarousel from '../components/MemberCarousel'
-
 
 const Members = () => {
   
@@ -73,7 +70,7 @@ const Members = () => {
 
   return (
     <div className='self-center flex flex-col gap-5 py-10 w-full'>
-      <h1 className='text-4xl font-semibold text-center text-fuchsia-800'>Members</h1>
+      <h1 className='text-4xl font-semibold text-center text-fuchsia-800'>{t('members')}</h1>
       <div className='flex flex-row 2xl:justify-between justify-center sm:gap-0 gap-3 items-center sm:flex-nowrap flex-wrap'>
         {members.length > 0 ? (
           members.map((member, index) => (

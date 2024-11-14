@@ -9,6 +9,8 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
   const { i18n } = useTranslation()
   const currentLanguage = i18n.language
+  const { t } = useTranslation();
+
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen)
@@ -34,31 +36,31 @@ const Navbar = () => {
       <img onClick={toggleMenu} className='lg:hidden block' src={menuImg} alt="" />
       <ul className="hidden lg:flex flex-row text-white font-normal text-2xl xl:gap-14 gap-8 items-center">
         <Link to={'/'} state={{ sectionId: 'about' }}>
-          <li className="hover:cursor-pointer">About us</li>
+          <li className="hover:cursor-pointer">{t("aboutNav")}</li>
         </Link>
         <Link to={'/'} state={{ sectionId: 'media' }}>
-          <li className="hover:cursor-pointer">Media</li>
+          <li className="hover:cursor-pointer">{t("mediaNav")}</li>
         </Link>
         <Link to="/events">
-          <li onClick={() => scrollToTop()} className="hover:cursor-pointer">Events</li>
+          <li onClick={() => scrollToTop()} className="hover:cursor-pointer">{t("eventsNav")}</li>
         </Link>
         <Link to={'/press'} state={{ sectionId: 'press' }}>
-          <li onClick={() => scrollToTop()} className="hover:cursor-pointer">Press</li>
+          <li onClick={() => scrollToTop()} className="hover:cursor-pointer">{t("pressNav")}</li>
         </Link>
         <Link to={'/'} state={{ sectionId: 'contact' }}>
-          <li className="hover:cursor-pointer">Contact</li>
+          <li className="hover:cursor-pointer">{t("contactNav")}</li>
         </Link>
         {currentLanguage === 'en' ? (
           <li
             onClick={() => changeLanguage('de')}
-            className="hover:cursor-pointer text-xl font-semibold text-fuchsia-700 bg-white py-2.5 px-2 rounded-full leading-none"
+            className="hover:cursor-pointer text-xl font-semibold text-fuchsia-700 bg-white py-2.5 px-2 rounded-full leading-none select-none"
           >
             DE
           </li>
         ) : (
           <li
             onClick={() => changeLanguage('en')}
-            className="hover:cursor-pointer text-xl font-semibold text-fuchsia-700 bg-white py-2.5 px-2 rounded-full leading-none"
+            className="hover:cursor-pointer text-xl font-semibold text-fuchsia-700 bg-white py-2.5 px-2 rounded-full leading-none select-none"
           >
             EN
           </li>
@@ -68,19 +70,19 @@ const Navbar = () => {
         <div className="fixed top-24 left-0 right-0 bg-fuchsia-800 text-white text-2xl px-4 pt-4 pb-8 lg:hidden">
           <ul className="flex flex-col gap-4">
             <Link to={'/'} state={{ sectionId: 'about' }} onClick={toggleMenu}>
-              <li className="hover:cursor-pointer">About us</li>
+              <li className="hover:cursor-pointer">{t("aboutNav")}</li>
             </Link>
             <Link to={'/'} state={{ sectionId: 'media' }} onClick={toggleMenu}>
-              <li className="hover:cursor-pointer">Media</li>
+              <li className="hover:cursor-pointer">{t("mediaNav")}</li>
             </Link>
             <Link to="/events" onClick={toggleMenu}>
-              <li onClick={scrollToTop} className="hover:cursor-pointer">Events</li>
+              <li onClick={scrollToTop} className="hover:cursor-pointer">{t("eventsNav")}</li>
             </Link>
             <Link to={'/press'} state={{ sectionId: 'press' }} onClick={toggleMenu}>
-              <li onClick={scrollToTop} className="hover:cursor-pointer">Press</li>
+              <li onClick={scrollToTop} className="hover:cursor-pointer">{t("pressNav")}</li>
             </Link>
             <Link to={'/'} state={{ sectionId: 'contact' }} onClick={toggleMenu}>
-              <li className="hover:cursor-pointer">Contact</li>
+              <li className="hover:cursor-pointer">{t("contactNav")}</li>
             </Link>
             {currentLanguage === 'en' ? (
               <li

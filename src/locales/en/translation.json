@@ -1,5 +1,17 @@
 {
+  "aboutNav": "About us",
+  "mediaNav": "Media",
+  "eventsNav": "Events",
+  "pressNav": "Press",
+  "contactNav": "Contact",
   "aboutTitle": "Opercussion is a one-of-a-kind ensemble that extracts the percussion section from the depths of the orchestra pit and thrusts it centre stage, by blending rich music history with daring innovation.",
+  "readMoreBtn": "Read more",
+  "members": "Members",
+  "listenUs": "Listen to us on your favorite platform",
+  "listenNow": "Listen now",
+  "partners": "Partners",
+  "managment": "General management",
+  "listenToUs": "Listen to us!",
   "readMore1": "In keeping with the Munich State Opera’s long tradition of encouraging its members to explore chamber music, OPERcussion was born in 2008 from the happy association between Pieter Roijen, Maxime Pidoux, Carlos Vera Larrucea, Claudio Estay, and, later, Tomás Toral, who bring their virtuosity, knowledge, diverse cultural traditions, and idiosyncrasies to the ensemble. Two of the members were originally part of percussionist Peter Sadlo’s Latin Jazz Quintet and after his sudden demise chose to honour his legacy by playing his jazz arrangements. OPERcussion rapidly expanded its repertoire and took on a distinctive life of its own, by adapting music not originally written for percussion stemming from the Baroque, Classic, and Impressionistic eras, as well as taking inspiration from Latin America. The ensemble has also collaborated and commissioned works from contemporary composers and often uses improvisational techniques in performance.",
   "readMore2": "Opercussion recently released their first CD, Original Grooves, which features rhythms from Latin America, like Chick Corea and Astor Piazzolla, but also includes a work by Bach. The recording was received warmly by critics: “the prelude from Bach’s ‘Well-Tempered Clavier’ sets in, like a crazy sewing machine that stops again and again, calming down for rhythmic solo escapades … marimba and vibraphone provide melodic flesh, a bass worming around below. Very cool. … They can do anything” (Süddeutsche Zeitung).",
   "readMore3": "Opercussion recently released their first CD, Original Grooves, which features rhythms from Latin America, like Chick Corea and Astor Piazzolla, but also includes a work by Bach. The recording was received warmly by critics: “the prelude from Bach’s ‘Well-Tempered Clavier’ sets in, like a crazy sewing machine that stops again and again, calming down for rhythmic solo escapades … marimba and vibraphone provide melodic flesh, a bass worming around below. Very cool. … They can do anything” (Süddeutsche Zeitung).",
@@ -8,5 +20,9 @@
   "maxime": "Maxime was born in Paris to a family of musicians. After two years of piano lessons, he finally decided to play the drums. He was with the Bavarian State Orchestra from 2016 to 2022 and is now solo timpanist at La Scala in Milan. He describes everything that has a skin and sounds good as his favorite instrument.",
   "pieter": "Pieter grew up in the Netherlands and became solo timpanist in Het Gelder Orkest (which unfortunately no longer exists). From 2007 to 2022 he was assistant solo timpanist and percussionist with the Bavarian State Orchestra; since February 2022, he is solo timpanist (coord.). His favorite instrument is the triangle :) Pieter currently has four little hobbies that keep him busy—they are 13, 11, 9 and 4 years old.",
   "tomas": "Originally from Mallorca, Tomàs has been a percussionist with the Bavarian State Opera since January 2023. Rather than having a single favorite instrument, he enjoys playing a wide variety, keeping them all in regular rotation. Outside of music, he has a passion for cooking, which he loves to explore in his free time.",
-  "carlos": "Carlos grew up in Santiago de Chile. He was first deputy solo timpanist at Teatro Municipal de Santiago (national opera in Chile) before joining the Bavarian State Opera in 2015. Carlos loves the vibraphone, plays a little guitar and learned to play the recorder as a child."
+  "carlos": "Carlos grew up in Santiago de Chile. He was first deputy solo timpanist at Teatro Municipal de Santiago (national opera in Chile) before joining the Bavarian State Opera in 2015. Carlos loves the vibraphone, plays a little guitar and learned to play the recorder as a child.",
+  "upcomingEvents": "Upcoming events",
+  "getTicket": "Get ticket here",
+  "pastAppointments": "Past appointments",
+  "press": "Press"
 }
