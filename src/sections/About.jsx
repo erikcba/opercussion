@@ -14,7 +14,7 @@ const About = () => {
           <div className='text-fuchsia-800 flex flex-row justify-center items-center sm:gap-5 gap-3 mb-5'>
             <h1 className='sm:text-6xl text-4xl font-light border-r-4 border-fuchsia-800 text-center sm:pr-5 pr-2'>Pulse</h1>
             <h1 className='sm:text-6xl text-4xl font-light border-r-4 border-fuchsia-800 text-center sm:pr-5 pr-2'>Vibe</h1>
-            <h1 className='sm:text-6xl text-4xl font-light text-center'>Art</h1>
+            <h1 className='sm:text-6xl text-4xl font-light text-center'>{t('art')} </h1>
           </div>
           <p className='sm:text-3xl text-xl font-normal text-center sm:leading-10 leading-8'>
             {t('aboutTitle')}

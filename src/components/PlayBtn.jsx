@@ -19,7 +19,7 @@ const PlayBtn = () => {
       audio.play();
       setIsPlaying(true);
     }
-  };
+  }
 
   audio.onended = () => setIsPlaying(false)
 
