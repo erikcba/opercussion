@@ -17,11 +17,13 @@ const Footer = () => {
                 <div className='flex flex-col items-start gap-5 h-full'>
                     <h2 className='font-semibold text-4xl text-white'>{t("contactNav")}</h2>
                     <div className='flex flex-col gap-3'>
-                        <img src={tybLogo} className='w-max' alt="" />
-                        <div>
+                        <a href="https://tybarts.com/" target="_blank" rel="noreferrer">
+                            <img src={tybLogo} className='w-max' alt="" />
+                        </a>
+                        <a href="https://tybarts.com/" target="_blank" rel="noreferrer">
                             <p className='text-white text-2xl font-light'>Thomas Yaksic Beckdorf</p>
                             <p className='text-white text-xl font-semibold '>General management</p>
-                        </div>
+                        </a>
                     </div>
                     <div>
                         <div className='flex flex-row gap-3 justify-start items-center'>

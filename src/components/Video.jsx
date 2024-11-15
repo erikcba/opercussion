@@ -6,7 +6,7 @@ const Video = () => {
 
 
   return (
-    <a href="https://www.youtube.com/@opercussion" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.youtube.com/watch?v=aq_r6Z0Awkk&t=2s&ab_channel=TYBArts" target="_blank" rel="noopener noreferrer">
       <div className='relative hover:cursor-pointer'>
         <img src={video} alt="" className='rounded-lg w-full h-full' />
         <div className='bg-white-c  rounded-full leading-none w-max h-max p-2 '>
